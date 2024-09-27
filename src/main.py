@@ -1,7 +1,5 @@
 # This is a sample Python script.
 
-import random
-
 # install packages
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -76,9 +74,10 @@ def plot_results(data_cum):
     plt.xlabel('Rounds')
     plt.ylabel('Frequency')
     plt.title('Dreidel Histogram - Bank: 10')
+    plt.savefig('results/dreidel_hist.png')
     plt.show()
 
-# Press the green button in the gutter to run the script.
+# Press the button in the header to run the script.
 if __name__ == '__main__':
     print('========== New Sim ==========')
     for g in range(1,401):
